@@ -1,0 +1,7 @@
+{
+    "precision": 10,
+    "roundingMode": "HALF_EVEN",
+    "checkOverflow": true,
+    "maxSteps": 1000,
+    "debug": false
+  }

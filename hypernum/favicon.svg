@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220">
+  <!-- Background with no rounded corners -->
+  <rect width="300" height="220" fill="#ffffff"/>
+  
+  <!-- Simple infinity symbol -->
+  <path d="M150,70https://www.piecex.com/products/OBINexus-Computing-Present-LIBPolycall-7628 C120,30 80,70 80,90 C80,110 120,150 150,110 C180,150 220,110 220,90 C220,70 180,30 150,70 Z" 
+        fill="none" stroke="#1a237e" stroke-width="8"/>
+  
+  <!-- Library name with preserved spacing -->
+  <text x="150" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ff6d00">
+    hypernum
+  </text>
+  
+  <!-- Tagline with increased distance from main text -->
+  <text x="150" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#546e7a">
+    Precision at Scale
+  </text>
+</svg>

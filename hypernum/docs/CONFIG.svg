@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720">
+  <!-- Styles -->
+  <style>
+    .title { font: bold 16px sans-serif; }
+    .subtitle { font: italic 12px sans-serif; }
+    .attribute { font: 12px sans-serif; }
+    .method { font: 12px sans-serif; }
+    .class-box { fill: #f5f5f5; stroke: #333; stroke-width: 2; }
+    .header-box { fill: #e6e6e6; stroke: #333; stroke-width: 1; }
+    .arrow { stroke: #333; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+    .dashed-arrow { stroke: #333; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); stroke-dasharray: 5,3; }
+    .interface-box { fill: #e6f7ff; stroke: #333; stroke-width: 2; }
+  </style>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- ConfigLoader Class -->
+  <rect x="50" y="50" width="220" height="130" rx="5" class="class-box" />
+  <rect x="50" y="50" width="220" height="30" rx="5" class="header-box" />
+  <text x="160" y="70" text-anchor="middle" class="title">ConfigLoader</text>
+  <line x1="50" y1="80" x2="270" y2="80" stroke="#333" stroke-width="1" />
+  <text x="60" y="100" class="attribute">- configSearchPaths: string[]</text>
+  <text x="60" y="115" class="attribute">- cachedConfig: HypernumConfig</text>
+  <line x1="50" y1="125" x2="270" y2="125" stroke="#333" stroke-width="1" />
+  <text x="60" y="145" class="method">+ loadConfig(): HypernumConfig</text>
+  <text x="60" y="160" class="method">+ saveConfig(config: HypernumConfig): void</text>
+  
+  <!-- ConfigResolver Class -->
+  <rect x="350" y="50" width="250" height="130" rx="5" class="class-box" />
+  <rect x="350" y="50" width="250" height="30" rx="5" class="header-box" />
+  <text x="475" y="70" text-anchor="middle" class="title">ConfigResolver</text>
+  <line x1="350" y1="80" x2="600" y2="80" stroke="#333" stroke-width="1" />
+  <text x="360" y="100" class="attribute">- configPrecedence: ConfigSource[]</text>
+  <line x1="350" y1="110" x2="600" y2="110" stroke="#333" stroke-width="1" />
+  <text x="360" y="130" class="method">+ resolveConfig(sources: ConfigSource[]): HypernumConfig</text>
+  <text x="360" y="145" class="method">+ validateConfigSource(source: ConfigSource): boolean</text>
+  <text x="360" y="160" class="method">+ mergeConfigs(configs: HypernumConfig[]): HypernumConfig</text>
+  
+  <!-- ConfigParser Class -->
+  <rect x="200" y="240" width="220" height="115" rx="5" class="class-box" />
+  <rect x="200" y="240" width="220" height="30" rx="5" class="header-box" />
+  <text x="310" y="260" text-anchor="middle" class="title">ConfigParser</text>
+  <line x1="200" y1="270" x2="420" y2="270" stroke="#333" stroke-width="1" />
+  <line x1="200" y1="280" x2="420" y2="280" stroke="#333" stroke-width="1" />
+  <text x="210" y="300" class="method">+ parseJsonConfig(file: string): HypernumConfig</text>
+  <text x="210" y="315" class="method">+ parseJsConfig(file: string): HypernumConfig</text>
+  <text x="210" y="330" class="method">+ parseRcConfig(file: string): HypernumConfig</text>
+  <text x="210" y="345" class="method">+ stringifyConfig(config: HypernumConfig): string</text>
+  
+  <!-- HypernumConfig Interface -->
+  <rect x="450" y="400" width="250" height="115" rx="5" class="interface-box" />
+  <rect x="450" y="400" width="250" height="30" rx="5" class="header-box" />
+  <text x="575" y="420" text-anchor="middle" class="title">«interface» HypernumConfig</text>
+  <line x1="450" y1="430" x2="700" y2="430" stroke="#333" stroke-width="1" />
+  <text x="460" y="445" class="attribute">+ precision?: number</text>
+  <text x="460" y="460" class="attribute">+ roundingMode?: RoundingMode</text>
+  <text x="460" y="475" class="attribute">+ checkOverflow?: boolean</text>
+  <text x="460" y="490" class="attribute">+ maxSteps?: number</text>
+  <text x="460" y="505" class="attribute">+ debug?: boolean</text>
+  
+  <!-- ConfigSource Enum -->
+  <rect x="650" y="240" width="200" height="115" rx="5" class="class-box" />
+  <rect x="650" y="240" width="200" height="30" rx="5" class="header-box" />
+  <text x="750" y="260" text-anchor="middle" class="title">«enum» ConfigSource</text>
+  <line x1="650" y1="270" x2="850" y2="270" stroke="#333" stroke-width="1" />
+  <text x="660" y="290" class="attribute">ENV_VARIABLES</text>
+  <text x="660" y="305" class="attribute">RC_FILE</text>
+  <text x="660" y="320" class="attribute">JSON_FILE</text>
+  <text x="660" y="335" class="attribute">JS_FILE</text>
+  <text x="660" y="350" class="attribute">INLINE_CONFIG</text>
+  
+  <!-- FullConfig Interface -->
+  <rect x="350" y="550" width="200" height="80" rx="5" class="interface-box" />
+  <rect x="350" y="550" width="200" height="30" rx="5" class="header-box" />
+  <text x="450" y="570" text-anchor="middle" class="title">«interface» FullConfig</text>
+  <line x1="350" y1="580" x2="550" y2="580" stroke="#333" stroke-width="1" />
+  <text x="360" y="595" class="attribute">+ arithmetic: ArithmeticConfig</text>
+  <text x="360" y="610" class="attribute">+ dataStructures: DataStructuresConfig</text>
+  <text x="360" y="625" class="attribute">+ More advanced properties...</text>
+  
+  <!-- BasicConfig Interface -->
+  <rect x="600" y="550" width="200" height="80" rx="5" class="interface-box" />
+  <rect x="600" y="550" width="200" height="30" rx="5" class="header-box" />
+  <text x="700" y="570" text-anchor="middle" class="title">«interface» BasicConfig</text>
+  <line x1="600" y1="580" x2="800" y2="580" stroke="#333" stroke-width="1" />
+  <text x="610" y="595" class="attribute">+ precision?: number</text>
+  <text x="610" y="610" class="attribute">+ roundingMode?: RoundingMode</text>
+  <text x="610" y="625" class="attribute">+ Other basic properties...</text>
+  
+  <!-- ConfigurationModule Class -->
+  <rect x="50" y="400" width="320" height="145" rx="5" class="class-box" />
+  <rect x="50" y="400" width="320" height="30" rx="5" class="header-box" />
+  <text x="210" y="420" text-anchor="middle" class="title">ConfigurationModule</text>
+  <line x1="50" y1="430" x2="370" y2="430" stroke="#333" stroke-width="1" />
+  <text x="60" y="445" class="attribute">- configLoader: ConfigLoader</text>
+  <text x="60" y="460" class="attribute">- configResolver: ConfigResolver</text>
+  <text x="60" y="475" class="attribute">- configParser: ConfigParser</text>
+  <line x1="50" y1="485" x2="370" y2="485" stroke="#333" stroke-width="1" />
+  <text x="60" y="500" class="method">+ getConfig(): HypernumConfig</text>
+  <text x="60" y="515" class="method">+ initializeFromFile(filePath: string): HypernumConfig</text>
+  <text x="60" y="530" class="method">+ createDefaultConfig(type: 'basic' | 'full'): HypernumConfig</text>
+  <text x="60" y="545" class="method">+ saveConfigToFile(config: HypernumConfig, filePath: string): void</text>
+  
+  <!-- Relationships -->
+  <path d="M160 180 L160 240 L200 240" class="arrow" />
+  <path d="M420 240 L475 180" class="arrow" />
+  <path d="M600 130 L750 240" class="arrow" />
+  <path d="M310 355 L500 400" class="dashed-arrow" />
+  <path d="M210 545 L390 550" class="dashed-arrow" />
+  <path d="M210 545 L650 550" class="dashed-arrow" />
+  <path d="M450 515 L520 515" class="dashed-arrow" />
+  <path d="M410 630 L450 630 L450 515" class="arrow" />
+  <path d="M700 630 L700 515 L500 515" class="arrow" />
+  
+  <!-- Inheritance Relationships -->
+  <path d="M400 550 L535 515" class="arrow" />
+  <path d="M650 550 L550 515" class="arrow" />
+</svg>
