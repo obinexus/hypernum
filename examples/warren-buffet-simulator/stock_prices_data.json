@@ -1,0 +1,422 @@
+[
+  {
+    "day": 1,
+    "price": 120.50,
+    "volume": 3200,
+    "volatility": 0.15,
+    "trend": "neutral",
+    "risk": 0.3,
+    "momentum": 0.1,
+    "dimensional_tags": {
+      "growth_risk": 0.2,
+      "precision_tension": 0.1,
+      "market_sentiment": "cautious"
+    }
+  },
+  {
+    "day": 2,
+    "price": 122.75,
+    "volume": 3450,
+    "volatility": 0.18,
+    "trend": "upward",
+    "risk": 0.25,
+    "momentum": 0.3,
+    "dimensional_tags": {
+      "growth_risk": 0.15,
+      "precision_tension": 0.1,
+      "market_sentiment": "optimistic"
+    }
+  },
+  {
+    "day": 3,
+    "price": 125.20,
+    "volume": 4100,
+    "volatility": 0.22,
+    "trend": "upward",
+    "risk": 0.35,
+    "momentum": 0.4,
+    "dimensional_tags": {
+      "growth_risk": 0.3,
+      "precision_tension": 0.2,
+      "market_sentiment": "bullish"
+    }
+  },
+  {
+    "day": 4,
+    "price": 123.80,
+    "volume": 3800,
+    "volatility": 0.28,
+    "trend": "downward",
+    "risk": 0.45,
+    "momentum": -0.2,
+    "dimensional_tags": {
+      "growth_risk": 0.4,
+      "precision_tension": 0.3,
+      "market_sentiment": "uncertain"
+    }
+  },
+  {
+    "day": 5,
+    "price": 126.45,
+    "volume": 5200,
+    "volatility": 0.35,
+    "trend": "upward",
+    "risk": 0.55,
+    "momentum": 0.5,
+    "dimensional_tags": {
+      "growth_risk": 0.5,
+      "precision_tension": 0.4,
+      "market_sentiment": "volatile"
+    }
+  },
+  {
+    "day": 6,
+    "price": 124.90,
+    "volume": 2900,
+    "volatility": 0.20,
+    "trend": "downward",
+    "risk": 0.25,
+    "momentum": -0.1,
+    "dimensional_tags": {
+      "growth_risk": 0.2,
+      "precision_tension": 0.15,
+      "market_sentiment": "cooling"
+    }
+  },
+  {
+    "day": 7,
+    "price": 127.60,
+    "volume": 3700,
+    "volatility": 0.25,
+    "trend": "upward",
+    "risk": 0.30,
+    "momentum": 0.3,
+    "dimensional_tags": {
+      "growth_risk": 0.25,
+      "precision_tension": 0.2,
+      "market_sentiment": "recovering"
+    }
+  },
+  {
+    "day": 8,
+    "price": 129.15,
+    "volume": 4200,
+    "volatility": 0.18,
+    "trend": "upward",
+    "risk": 0.20,
+    "momentum": 0.4,
+    "dimensional_tags": {
+      "growth_risk": 0.15,
+      "precision_tension": 0.1,
+      "market_sentiment": "confident"
+    }
+  },
+  {
+    "day": 9,
+    "price": 130.80,
+    "volume": 3900,
+    "volatility": 0.15,
+    "trend": "upward",
+    "risk": 0.15,
+    "momentum": 0.5,
+    "dimensional_tags": {
+      "growth_risk": 0.1,
+      "precision_tension": 0.05,
+      "market_sentiment": "strong"
+    }
+  },
+  {
+    "day": 10,
+    "price": 132.25,
+    "volume": 4500,
+    "volatility": 0.12,
+    "trend": "upward",
+    "risk": 0.10,
+    "momentum": 0.6,
+    "dimensional_tags": {
+      "growth_risk": 0.05,
+      "precision_tension": 0.05,
+      "market_sentiment": "very_bullish"
+    }
+  },
+  {
+    "day": 11,
+    "price": 128.70,
+    "volume": 6800,
+    "volatility": 0.45,
+    "trend": "downward",
+    "risk": 0.70,
+    "momentum": -0.4,
+    "dimensional_tags": {
+      "growth_risk": 0.6,
+      "precision_tension": 0.5,
+      "market_sentiment": "panic"
+    }
+  },
+  {
+    "day": 12,
+    "price": 125.30,
+    "volume": 7200,
+    "volatility": 0.50,
+    "trend": "downward",
+    "risk": 0.75,
+    "momentum": -0.6,
+    "dimensional_tags": {
+      "growth_risk": 0.7,
+      "precision_tension": 0.6,
+      "market_sentiment": "fearful"
+    }
+  },
+  {
+    "day": 13,
+    "price": 127.85,
+    "volume": 5400,
+    "volatility": 0.38,
+    "trend": "upward",
+    "risk": 0.50,
+    "momentum": 0.2,
+    "dimensional_tags": {
+      "growth_risk": 0.4,
+      "precision_tension": 0.3,
+      "market_sentiment": "recovering"
+    }
+  },
+  {
+    "day": 14,
+    "price": 130.10,
+    "volume": 4100,
+    "volatility": 0.25,
+    "trend": "upward",
+    "risk": 0.30,
+    "momentum": 0.4,
+    "dimensional_tags": {
+      "growth_risk": 0.2,
+      "precision_tension": 0.2,
+      "market_sentiment": "stabilizing"
+    }
+  },
+  {
+    "day": 15,
+    "price": 131.90,
+    "volume": 3800,
+    "volatility": 0.20,
+    "trend": "upward",
+    "risk": 0.25,
+    "momentum": 0.5,
+    "dimensional_tags": {
+      "growth_risk": 0.15,
+      "precision_tension": 0.15,
+      "market_sentiment": "positive"
+    }
+  },
+  {
+    "day": 16,
+    "price": 133.75,
+    "volume": 4000,
+    "volatility": 0.18,
+    "trend": "upward",
+    "risk": 0.20,
+    "momentum": 0.6,
+    "dimensional_tags": {
+      "growth_risk": 0.1,
+      "precision_tension": 0.1,
+      "market_sentiment": "bullish"
+    }
+  },
+  {
+    "day": 17,
+    "price": 135.40,
+    "volume": 4300,
+    "volatility": 0.15,
+    "trend": "upward",
+    "risk": 0.15,
+    "momentum": 0.7,
+    "dimensional_tags": {
+      "growth_risk": 0.05,
+      "precision_tension": 0.05,
+      "market_sentiment": "very_strong"
+    }
+  },
+  {
+    "day": 18,
+    "price": 137.20,
+    "volume": 4600,
+    "volatility": 0.12,
+    "trend": "upward",
+    "risk": 0.10,
+    "momentum": 0.8,
+    "dimensional_tags": {
+      "growth_risk": 0.05,
+      "precision_tension": 0.05,
+      "market_sentiment": "euphoric"
+    }
+  },
+  {
+    "day": 19,
+    "price": 134.85,
+    "volume": 5100,
+    "volatility": 0.32,
+    "trend": "downward",
+    "risk": 0.45,
+    "momentum": -0.3,
+    "dimensional_tags": {
+      "growth_risk": 0.4,
+      "precision_tension": 0.3,
+      "market_sentiment": "profit_taking"
+    }
+  },
+  {
+    "day": 20,
+    "price": 136.60,
+    "volume": 3900,
+    "volatility": 0.22,
+    "trend": "upward",
+    "risk": 0.25,
+    "momentum": 0.3,
+    "dimensional_tags": {
+      "growth_risk": 0.2,
+      "precision_tension": 0.2,
+      "market_sentiment": "resilient"
+    }
+  },
+  {
+    "day": 21,
+    "price": 138.95,
+    "volume": 4200,
+    "volatility": 0.18,
+    "trend": "upward",
+    "risk": 0.20,
+    "momentum": 0.5,
+    "dimensional_tags": {
+      "growth_risk": 0.15,
+      "precision_tension": 0.1,
+      "market_sentiment": "strong_buy"
+    }
+  },
+  {
+    "day": 22,
+    "price": 140.75,
+    "volume": 4500,
+    "volatility": 0.15,
+    "trend": "upward",
+    "risk": 0.15,
+    "momentum": 0.6,
+    "dimensional_tags": {
+      "growth_risk": 0.1,
+      "precision_tension": 0.05,
+      "market_sentiment": "momentum"
+    }
+  },
+  {
+    "day": 23,
+    "price": 142.30,
+    "volume": 4800,
+    "volatility": 0.12,
+    "trend": "upward",
+    "risk": 0.10,
+    "momentum": 0.7,
+    "dimensional_tags": {
+      "growth_risk": 0.05,
+      "precision_tension": 0.05,
+      "market_sentiment": "breakout"
+    }
+  },
+  {
+    "day": 24,
+    "price": 139.80,
+    "volume": 6200,
+    "volatility": 0.35,
+    "trend": "downward",
+    "risk": 0.50,
+    "momentum": -0.4,
+    "dimensional_tags": {
+      "growth_risk": 0.45,
+      "precision_tension": 0.4,
+      "market_sentiment": "correction"
+    }
+  },
+  {
+    "day": 25,
+    "price": 141.45,
+    "volume": 4700,
+    "volatility": 0.25,
+    "trend": "upward",
+    "risk": 0.30,
+    "momentum": 0.2,
+    "dimensional_tags": {
+      "growth_risk": 0.25,
+      "precision_tension": 0.2,
+      "market_sentiment": "buying_dip"
+    }
+  },
+  {
+    "day": 26,
+    "price": 143.90,
+    "volume": 5000,
+    "volatility": 0.20,
+    "trend": "upward",
+    "risk": 0.25,
+    "momentum": 0.5,
+    "dimensional_tags": {
+      "growth_risk": 0.2,
+      "precision_tension": 0.15,
+      "market_sentiment": "recovery"
+    }
+  },
+  {
+    "day": 27,
+    "price": 145.60,
+    "volume": 5200,
+    "volatility": 0.18,
+    "trend": "upward",
+    "risk": 0.20,
+    "momentum": 0.6,
+    "dimensional_tags": {
+      "growth_risk": 0.15,
+      "precision_tension": 0.1,
+      "market_sentiment": "sustained_growth"
+    }
+  },
+  {
+    "day": 28,
+    "price": 147.25,
+    "volume": 5400,
+    "volatility": 0.15,
+    "trend": "upward",
+    "risk": 0.15,
+    "momentum": 0.7,
+    "dimensional_tags": {
+      "growth_risk": 0.1,
+      "precision_tension": 0.05,
+      "market_sentiment": "new_highs"
+    }
+  },
+  {
+    "day": 29,
+    "price": 149.85,
+    "volume": 5800,
+    "volatility": 0.12,
+    "trend": "upward",
+    "risk": 0.10,
+    "momentum": 0.8,
+    "dimensional_tags": {
+      "growth_risk": 0.05,
+      "precision_tension": 0.05,
+      "market_sentiment": "climax"
+    }
+  },
+  {
+    "day": 30,
+    "price": 152.40,
+    "volume": 6000,
+    "volatility": 0.10,
+    "trend": "upward",
+    "risk": 0.05,
+    "momentum": 0.9,
+    "dimensional_tags": {
+      "growth_risk": 0.05,
+      "precision_tension": 0.05,
+      "market_sentiment": "peak_performance"
+    }
+  }
+]
