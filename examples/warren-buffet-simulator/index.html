@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warren Buffett Investment Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎯 Warren Buffett Investment Simulator</h1>
+        <p>Learn dimensional thinking and patient investing with Hypernum precision</p>
+    </header>
+
+    <div class="container">
+        <!-- Strategy Controls -->
+        <div class="control-panel">
+            <h3>Investment Strategy</h3>
+            <div class="strategy-controls">
+                <label>
+                    Risk Mode:
+                    <select id="riskMode">
+                        <option value="conservative">Conservative (Buffett Style)</option>
+                        <option value="aggressive">Aggressive (Day Trader)</option>
+                    </select>
+                </label>
+                <label>
+                    Investment Amount: $<input type="number" id="investmentAmount" value="1000" min="100" max="10000" step="100">
+                </label>
+                <button id="resetSimulation">Reset Simulation</button>
+            </div>
+        </div>
+
+        <!-- Main Dashboard -->
+        <div class="dashboard">
+            <!-- Price Chart -->
+            <div class="chart-section">
+                <h3>Stock Price Movement (30 Days)</h3>
+                <canvas id="priceChart" width="800" height="400"></canvas>
+                <div class="chart-legend">
+                    <span class="legend-item safe">🟢 Safe Investment Window</span>
+                    <span class="legend-item risky">🔴 High Risk Period</span>
+                    <span class="legend-item neutral">🟡 Neutral Zone</span>
+                </div>
+            </div>
+
+            <!-- Investment Windows -->
+            <div class="investment-windows">
+                <h3>DGT Investment Analysis</h3>
+                <div id="investmentRecommendations"></div>
+            </div>
+        </div>
+
+        <!-- Portfolio Status -->
+        <div class="portfolio-section">
+            <h3>Portfolio Performance</h3>
+            <div class="portfolio-grid">
+                <div class="metric-card">
+                    <h4>Total Invested</h4>
+                    <span id="totalInvested">$0</span>
+                </div>
+                <div class="metric-card">
+                    <h4>Shares Owned</h4>
+                    <span id="sharesOwned">0</span>
+                </div>
+                <div class="metric-card">
+                    <h4>Average Cost</h4>
+                    <span id="averageCost">$0</span>
+                </div>
+                <div class="metric-card">
+                    <h4>Current Value</h4>
+                    <span id="currentValue">$0</span>
+                </div>
+                <div class="metric-card">
+                    <h4>Gain/Loss</h4>
+                    <span id="gainLoss">$0 (0%)</span>
+                </div>
+                <div class="metric-card">
+                    <h4>Risk-Reward Ratio</h4>
+                    <span id="riskReward">0.0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dimensional Insights -->
+        <div class="dimensions-section">
+            <h3>Dimensional Game Theory Insights</h3>
+            <div id="dimensionalInsights"></div>
+        </div>
+
+        <!-- Investment Log -->
+        <div class="log-section">
+            <h3>Investment History</h3>
+            <div id="investmentLog"></div>
+        </div>
+    </div>
+
+    <!-- Simulate Day-by-Day Trading -->
+    <div class="trading-controls">
+        <button id="nextDay">Next Trading Day</button>
+        <button id="autoTrade">Auto-Trade (Watch Strategy)</button>
+        <span>Day: <span id="currentDay">1</span>/30</span>
+    </div>
+
+    <script type="module" src="strategy.js"></script>
+</body>
+</html>
